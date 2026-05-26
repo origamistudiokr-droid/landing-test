@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="하루 목표 금액 아래로 소비하도록 돕는 습관 형성 앱, 하루목표의 랜딩페이지입니다."
+    >
+    <title>하루목표 소비 앱</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="주요 메뉴">
+      <a class="brand" href="#top" aria-label="하루목표 홈">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>하루목표</span>
+      </a>
+      <nav class="desktop-nav" aria-label="페이지 이동">
+        <a href="#flow">흐름</a>
+        <a href="#demo">기록</a>
+        <a href="#habit">습관</a>
+      </nav>
+      <a class="header-cta" href="#waitlist">베타 알림</a>
+      <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <nav class="mobile-nav" aria-label="모바일 메뉴">
+      <a href="#flow">흐름</a>
+      <a href="#demo">기록</a>
+      <a href="#habit">습관</a>
+      <a href="#waitlist">베타 알림</a>
+    </nav>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">하루 목표 금액 이하로 쓰는 습관</p>
+          <h1 id="hero-title">하루목표 소비 앱</h1>
+          <p class="hero-lead">
+            매번 마음먹고도 새는 돈이 있다면, 하루 단위로 작게 잡고 바로 기록하세요.
+            오늘 쓴 금액과 남은 금액이 눈에 보이면 소비 속도가 달라집니다.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#waitlist">출시 소식 받기</a>
+            <a class="ghost-button" href="#demo">오늘 소비 미리보기</a>
+          </div>
+          <ul class="hero-proof">
+            <li><strong>10초</strong> 빠른 기록</li>
+            <li><strong>하루</strong> 목표 관리</li>
+            <li><strong>위젯</strong> 상태 확인</li>
+          </ul>
+        </div>
+
+        <div class="hero-scene" role="img" aria-label="하루목표 앱 화면 미리보기">
+          <div class="floating-receipt receipt-one">
+            <span>아메리카노</span>
+            <strong>4,500원</strong>
+          </div>
+          <div class="floating-receipt receipt-two">
+            <span>편의점 간식</span>
+            <strong>2,200원</strong>
+          </div>
+          <div class="phone hero-phone">
+            <div class="phone-top">
+              <span>9:41</span>
+              <span class="phone-dots"></span>
+            </div>
+            <div class="app-banner">
+              <div class="mini-mascot" aria-hidden="true">
+                <span class="mini-eye left"></span>
+                <span class="mini-eye right"></span>
+              </div>
+              <p>좋아. 오늘은 아직 여유롭네</p>
+            </div>
+            <div class="ring-wrap" role="img" aria-label="오늘 소비 18,700원, 남은 금액 31,300원">
+              <div class="progress-ring progress-37">
+                <div>
+                  <span>오늘 소비</span>
+                  <strong>18,700원</strong>
+                  <small>남은 금액 31,300원</small>
+                </div>
+              </div>
+            </div>
+            <div class="phone-stats">
+              <span><strong>4회</strong>소비 횟수</span>
+              <span><strong>37%</strong>목표 달성률</span>
+            </div>
+            <div class="phone-list">
+              <div>
+                <span class="list-icon coffee"></span>
+                <p>아메리카노<small>오전 8:42</small></p>
+                <strong>4,500원</strong>
+              </div>
+              <div>
+                <span class="list-icon snack"></span>
+                <p>편의점 간식<small>오전 11:15</small></p>
+                <strong>2,200원</strong>
+              </div>
+            </div>
+            <button class="phone-plus" type="button" aria-label="소비 기록 추가">+</button>
+          </div>
+          <div class="mascot hero-mascot" aria-hidden="true">
+            <span class="headband"></span>
+            <span class="eye eye-left"></span>
+            <span class="eye eye-right"></span>
+            <span class="beak"></span>
+            <span class="coin"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="problem section-band" aria-labelledby="problem-title">
+        <div class="section-heading">
+          <p class="eyebrow">문제 공감</p>
+          <h2 id="problem-title">큰 지출보다, 기억 안 나는 작은 소비가 더 무섭습니다.</h2>
+        </div>
+        <div class="problem-grid">
+          <article>
+            <span class="moment-icon coffee"></span>
+            <h3>아침 커피</h3>
+            <p>시작부터 목표 금액이 줄어듭니다.</p>
+          </article>
+          <article>
+            <span class="moment-icon meal"></span>
+            <h3>점심 후 간식</h3>
+            <p>생각 없이 더한 2천 원이 하루 흐름을 바꿉니다.</p>
+          </article>
+          <article>
+            <span class="moment-icon taxi"></span>
+            <h3>늦은 밤 이동</h3>
+            <p>피곤한 순간일수록 잔고는 조용히 빠져나갑니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="flow" id="flow" aria-labelledby="flow-title">
+        <div class="section-heading">
+          <p class="eyebrow">핵심 사용자 흐름</p>
+          <h2 id="flow-title">기록할수록 목표 달성 확률이 높아지는 반복 루프</h2>
+        </div>
+        <div class="flow-track">
+          <article class="flow-step">
+            <span>1</span>
+            <h3>소비 발생</h3>
+            <p>커피, 간식, 택시처럼 작은 지출이 생깁니다.</p>
+          </article>
+          <article class="flow-step">
+            <span>2</span>
+            <h3>빠른 기록</h3>
+            <p>금액과 카테고리를 10초 안에 남깁니다.</p>
+          </article>
+          <article class="flow-step">
+            <span>3</span>
+            <h3>상태 확인</h3>
+            <p>오늘 소비, 남은 금액, 목표 비율을 바로 봅니다.</p>
+          </article>
+          <article class="flow-step">
+            <span>4</span>
+            <h3>다음 소비 조절</h3>
+            <p>남은 하루의 선택이 조금 더 신중해집니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="demo section-band" id="demo" aria-labelledby="demo-title">
+        <div class="demo-copy">
+          <p class="eyebrow">핵심 경험</p>
+          <h2 id="demo-title">방금 쓴 돈을 입력하면, 오늘의 여유가 바로 바뀝니다.</h2>
+          <p>
+            하루 목표를 정해두고 소비 직후 기록하면 현재 상태가 즉시 갱신됩니다.
+            초록은 여유, 주황은 주의, 빨강은 멈춤 신호로 느끼게 만들었습니다.
+          </p>
+          <div class="demo-controls" role="group" aria-label="소비 기록 체험">
+            <button class="amount-chip active" type="button" data-amount="4500" data-label="아메리카노">
+              커피 4,500원
+            </button>
+            <button class="amount-chip" type="button" data-amount="8900" data-label="점심 식사">
+              점심 8,900원
+            </button>
+            <button class="amount-chip" type="button" data-amount="13200" data-label="택시">
+              택시 13,200원
+            </button>
+          </div>
+        </div>
+
+        <div class="demo-visual">
+          <div class="entry-panel">
+            <div class="entry-top">
+              <span></span>
+              <strong>소비 기록</strong>
+              <button type="button" aria-label="닫기">×</button>
+            </div>
+            <p>금액 입력</p>
+            <strong id="entryAmount">4,500원</strong>
+            <div class="category-row">
+              <span class="selected">커피</span>
+              <span>간식</span>
+              <span>식사</span>
+              <span>교통</span>
+            </div>
+            <button class="entry-button" type="button">기록하기</button>
+          </div>
+
+          <div class="phone demo-phone">
+            <div class="phone-top">
+              <span>9:41</span>
+              <span class="phone-dots"></span>
+            </div>
+            <div class="status-pill" id="statusPill">좋아. 아직 안전해</div>
+            <div class="ring-wrap">
+              <div class="progress-ring demo-ring progress-46" id="demoRing">
+                <div>
+                  <span>오늘 소비</span>
+                  <strong id="spentAmount">23,200원</strong>
+                  <small id="leftAmount">남은 금액 26,800원</small>
+                </div>
+              </div>
+            </div>
+            <div class="phone-stats">
+              <span><strong id="countAmount">5회</strong>소비 횟수</span>
+              <span><strong id="rateAmount">46%</strong>목표 달성률</span>
+            </div>
+            <div class="phone-list demo-list" id="demoList">
+              <div>
+                <span class="list-icon coffee"></span>
+                <p>아메리카노<small>오후 2:35</small></p>
+                <strong>4,500원</strong>
+              </div>
+              <div>
+                <span class="list-icon coffee"></span>
+                <p>아메리카노<small>오전 8:42</small></p>
+                <strong>4,500원</strong>
+              </div>
+              <div>
+                <span class="list-icon snack"></span>
+                <p>편의점 간식<small>오전 11:15</small></p>
+                <strong>2,200원</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="habit" id="habit" aria-labelledby="habit-title">
+        <div class="section-heading">
+          <p class="eyebrow">습관 형성</p>
+          <h2 id="habit-title">절약을 의지 문제가 아니라, 매일 보이는 상태로 바꿉니다.</h2>
+        </div>
+        <div class="habit-layout">
+          <article class="habit-copy">
+            <h3>목표는 월말이 아니라 오늘입니다.</h3>
+            <p>
+              프리랜서의 수입은 일정하지 않을 때가 많습니다. 그래서 하루목표는
+              “이번 달 덜 쓰기”보다 더 가까운 기준을 제안합니다. 오늘 50,000원 안에서
+              버티는 경험이 쌓이면, 통장 잔고도 천천히 회복됩니다.
+            </p>
+          </article>
+          <div class="widget-preview" role="img" aria-label="잠금화면 위젯 예시">
+            <div class="lock-time">2:36</div>
+            <div class="lock-date">5월 16일 목요일</div>
+            <div class="widget-card">
+              <div class="mini-mascot calm" aria-hidden="true">
+                <span class="mini-eye left"></span>
+                <span class="mini-eye right"></span>
+              </div>
+              <div>
+                <span>오늘 소비</span>
+                <strong>23,200원</strong>
+                <small>남은 금액 26,800원</small>
+              </div>
+              <b>46%</b>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="waitlist section-band" id="waitlist" aria-labelledby="waitlist-title">
+        <div class="waitlist-inner">
+          <div>
+            <p class="eyebrow">출시 준비 중</p>
+            <h2 id="waitlist-title">생각 없이 쓰는 하루를, 확인하고 조절하는 하루로.</h2>
+            <p>
+              베타 오픈 소식을 남겨두면 가장 먼저 알려드릴게요. 입력한 주소는 이 화면 안에서만
+              확인용으로 저장됩니다.
+            </p>
+          </div>
+          <form class="signup-form" id="signupForm" novalidate>
+            <label for="email">이메일</label>
+            <div class="input-row">
+              <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email">
+              <button type="submit">알림 받기</button>
+            </div>
+            <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>하루목표</span>
+      <span>오늘의 소비가 보이면 습관이 바뀝니다.</span>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
